@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Admin Tienda</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚙️ Panel Administrador</h1>
+
+<input id="nombre" placeholder="Nombre del producto">
+<input id="precio" type="number" placeholder="Precio">
+<input id="stock" type="number" placeholder="Stock">
+
+<input id="imagenes" placeholder="URLs de imágenes separadas por coma">
+
+<select id="categoria">
+    <option value="componentes">Componentes</option>
+    <option value="accesorios">Accesorios</option>
+</select>
+
+<br><br>
+<button onclick="agregarProducto()">Agregar producto</button>
+
+<h2>📦 Productos cargados</h2>
+<ul id="lista"></ul>
+
+<script src="admin.js"></script>
+<script>
+const clave = prompt("Ingresá la clave de administrador");
+
+if (clave !== "2026") {
+  alert("Acceso denegado");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

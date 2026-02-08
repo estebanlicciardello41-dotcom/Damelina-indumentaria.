@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Damelina Indumentaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">DAMELINA</h1>
+    <p class="subtitulo">Indumentaria</p>
+
+    <input 
+
+
+        type="text" 
+        id="buscador" 
+        placeholder="Buscar vestidos, jeans, camperas..."
+        onkeyup="buscarProducto()"
+    >
+
+    <button class="btn-carrito" onclick="toggleCarrito()">
+        🛒 Carrito (<span id="contador">0</span>)
+    </button>
+</header>
+
+<main>
+    <h2 class="titulo-seccion">Productos</h2>
+
+    <!-- ACA SE CARGAN LOS PRODUCTOS DEL ADMIN -->
+    <div id="lista-productos" class="grid-productos"></div>
+</main>
+
+
+
+
+<!-- CARRITO LATERAL -->
+<aside id="carrito">
+    <h2>🛍 Mi carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p id="total"></p>
+
+    <a class="btn-mp" href="https://www.mercadopago.com.ar" target="_blank">
+        💳 Pagar con Mercado Pago
+    </a>
+
+    <a class="btn-wsp" href="https://wa.me/549XXXXXXXXXX" target="_blank">
+        📲 Comprar por WhatsApp
+    </a>
+</aside>
+
+<footer>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

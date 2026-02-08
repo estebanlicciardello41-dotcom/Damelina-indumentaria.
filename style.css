@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("logo/Dam.jpg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+}
+
+.logo {
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px #ffb6c1;
+}
+
+.subtitulo {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* BUSCADOR DISTINTO */
+#buscador {
+    width: 350px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+/* BOTÓN CARRITO */
+.btn-carrito {
+    margin-left: 15px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: #ffb6c1;
+    border: none;
+    cursor: pointer;
+}
+
+/* PRODUCTOS */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    background: rgba(255,255,255,0.9);
+    color: black;
+    padding: 15px;
+    width: 220px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* CARRITO LATERAL */
+#carrito {
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #f8c8dc;
+    color: black;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+#carrito.activo {
+    right: 0;
+}
+
+.btn-mp, .btn-wsp {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-mp {
+    background: #009ee3;
+}
+
+.btn-wsp {
+    background: #25d366;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #ffb6c1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* 📱 CELULARES */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    #buscador {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .producto {
+        width: 90%;
+    }
+
+    #carrito {
+        width: 100%;
+    }
+}
+.producto {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+button {
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
