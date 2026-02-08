@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("logo/Dam.jpg.jpg") no-repeat center center fixed;
+    background: url("main/Dam.jpg.jpg") no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
@@ -153,4 +153,5 @@ button {
 button:hover {
     transform: scale(1.1);
 }
+
 
